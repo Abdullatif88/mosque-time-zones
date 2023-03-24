@@ -15,10 +15,27 @@
             width: 828px;
             height: 682px;
         }
+        body {
+            background-color:#B0BFC4;
+        }
+        P{
+            font-weight: normal;
+            font-family: 'Droid Arabic Kufi', serif;
+            font-size:25px;
+            line-height: 1;
+            text-align: center;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
         </style>
         <title></title>
     </head>
     <body>
+        <div> 
+            <p>
+            هذه الخريطة تعرض النطاقات الزمنية التي تتحرك فيها الأرض كل 10 ثواني، ويمكن من خلالها تقدير الفترة الزمنية للأذان من مسجد لآخر. فالفرق الزمني في الأذان بين مثلا مسجد بدرية السالم في السالمية وبين مسجد الكليب في قرطبة يصل إلى 25 ثانية تقريبا
+            </p>
+        </div>
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
@@ -114,5 +131,10 @@
         L.control.layers(baseMaps,{'<img src="legend/_1.png" /> النطاقات الزمنية': layer__1,"Google Maps": layer_GoogleMaps_0,}).addTo(map);
         setBounds();
         </script>
+        <div>
+        <p>
+            إعداد: د. عبداللطيف فهد الياقوت - قسم الجغرافيا - جامعة الكويت
+        </p>
+    </div>
     </body>
 </html>
